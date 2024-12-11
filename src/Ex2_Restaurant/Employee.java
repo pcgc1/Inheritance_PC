@@ -1,11 +1,14 @@
 package Ex2_Restaurant;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private String SIN;
     protected double taxesCollected;
 
-//notice the constructor is missing
+    public Employee(String n, String sin){
+        name = n;
+        SIN = sin;
+    }
 
 
     public void printMe(){
