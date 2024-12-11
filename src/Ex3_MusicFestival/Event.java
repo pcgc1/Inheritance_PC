@@ -1,4 +1,4 @@
-package Ex2_MusicFestival;
+package Ex3_MusicFestival;
 
 public abstract class Event {
 

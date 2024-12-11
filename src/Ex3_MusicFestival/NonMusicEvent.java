@@ -1,4 +1,4 @@
-package Ex2_MusicFestival;
+package Ex3_MusicFestival;
 
 class NonMusicEvent extends Event {
     public int rent;

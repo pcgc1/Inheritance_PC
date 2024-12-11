@@ -12,6 +12,7 @@ public class Ex1_Main {
         allAnimals.add(new Rotweiller( "Rubble" ));
         allAnimals.add( new Shihtzu("Bubbles"));
         allAnimals.add (new Trout( "Slippery" ));
+        allAnimals.add( new Camel("Sandy", 4) );
 
 //        for (int i = 0; i < allAnimals.size(); i++) {
 //            allAnimals.get(i).talk();
@@ -24,6 +25,11 @@ public class Ex1_Main {
                 allAnimals.get(i).talk();
             }
         }
+
+        allAnimals.get(5).talk();
+
+        Animal a = new Rotweiller("Mean old doggo");
+//        Rotweiller b = new Animal("baen");
 
 
     }//run
