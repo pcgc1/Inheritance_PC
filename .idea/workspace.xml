@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="baen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2_Restaurant/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2_Restaurant/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2_Restaurant/Ex2_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2_Restaurant/Ex2_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2_Restaurant/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2_Restaurant/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex2_Restaurant/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex2_Restaurant/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex1_Animals/Ex1_Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex1_Animals/Ex1_Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex2_MusicFestival/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex2_MusicFestival/MainStageEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex2_MusicFestival/NonMusicEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733952663640</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="baen">
+      <created>1733955781477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733955781477</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
