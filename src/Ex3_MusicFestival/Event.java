@@ -18,7 +18,7 @@ public abstract class Event {
     }
 
     public void printMe(){
-        System.out.println("\nName:" + eventName + "  Type:" + eventType + "  ID:" + eventID + "\n");
+        System.out.println("Name:" + eventName + "  Type:" + eventType + "  ID:" + eventID);
     }
 
     public int getEventID() {

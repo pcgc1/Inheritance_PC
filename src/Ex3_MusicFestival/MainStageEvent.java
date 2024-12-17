@@ -13,6 +13,11 @@ class MainStageEvent extends Event {
         techRequirements = new ArrayList<String>();
     }
 
+    @Override
+    public void printMe(){
+        System.out.println("\nName:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + "  ID:" + super.getEventID());
+    }
+
     public void addTech(String tech) {
         techRequirements.add(tech);
     }

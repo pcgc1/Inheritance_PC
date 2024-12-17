@@ -107,14 +107,33 @@ public class Ex3_Main {
 
             }else if (choice == 3) {
                 //filter by event type
-                System.out.println("What type of event do you want to filter by?");
-                String ans = input.nextLine();
+                System.out.println("What type of event do you want to filter by? 1 for MainStage, 2 for NonMusicEvent, 3 for SmallStage, 4 for FoodTruck");
+                int answer = input.nextInt();
+                input.nextLine();
 
-//                for (int i = 0; i < allEvents.size(); i++) {
-//                    if( allEvents.get(i) instanceof ans){
-//
-//                    }
-//                }//end for i
+                for (int i = 0; i < allEvents.size(); i++) {
+
+                    switch (answer){
+                        case 1:
+                            if(allEvents.get(i) instanceof MainStageEvent){
+                                allEvents.get(i).printMe();
+                            }
+                        case 2:
+                            if(allEvents.get(i) instanceof NonMusicEvent){
+                                allEvents.get(i).printMe();
+                                System.out.println("hi");
+                            }
+                        case 3:
+                            if(allEvents.get(i) instanceof SmallStage){
+                                allEvents.get(i).printMe();
+                            }
+                        case 4:
+                            if(allEvents.get(i) instanceof FoodTruck){
+                                allEvents.get(i).printMe();
+                            }
+                    }//end switch
+
+                }//end for i
 
 
             }else if (choice == 4) {

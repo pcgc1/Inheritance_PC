@@ -9,6 +9,13 @@ class FoodTruck extends NonMusicEvent{
         cuisine = c;
     }
 
+
+    @Override
+    public void printMe(){
+        System.out.println("\nName:" + super.getEventName() + "  Type:" + super.getEventType() + " Location:" + super.getLocation() + "  Cuisine:" + cuisine + "  ID:" + super.getEventID());
+    }
+
+
     public String printCuisine(){
         return "This food truck serves " + cuisine + " food";
     }
