@@ -93,9 +93,28 @@ public class Ex3_Main {
                 }//end else if
 
             }else if (choice == 2) {
+                //search for event by name
+                System.out.println("What event are you looking for?");
+                String name = input.nextLine();
 
+                for (int i = 0; i < allEvents.size(); i++) {
+                    if(allEvents.get(i).getEventName().equalsIgnoreCase(name) ){
+
+                        allEvents.get(i).printMe();
+
+                    }//end if
+                }//end for i
 
             }else if (choice == 3) {
+                //filter by event type
+                System.out.println("What type of event do you want to filter by?");
+                String ans = input.nextLine();
+
+//                for (int i = 0; i < allEvents.size(); i++) {
+//                    if( allEvents.get(i) instanceof ans){
+//
+//                    }
+//                }//end for i
 
 
             }else if (choice == 4) {
