@@ -53,7 +53,7 @@ public class Ex3_Main {
 //        }//end for
 
         while(true){
-            System.out.println("What do you want to do?\n1.Add new event\n2.Search for event\n3.Filter by event type\n4.tbd\n5.tbd\n6.exit");
+            System.out.println("What do you want to do?\n1.Add new event\n2.Search for event\n3.Filter by event type\n4.Print by groups\n5.Add MainStage Tech\n6.exit");
             int choice = input.nextInt();
             input.nextLine();
 
@@ -118,29 +118,63 @@ public class Ex3_Main {
                             if(allEvents.get(i) instanceof MainStageEvent){
                                 allEvents.get(i).printMe();
                             }
+                            break;
                         case 2:
                             if(allEvents.get(i) instanceof NonMusicEvent){
                                 allEvents.get(i).printMe();
-                                System.out.println("hi");
                             }
+                            break;
                         case 3:
                             if(allEvents.get(i) instanceof SmallStage){
                                 allEvents.get(i).printMe();
                             }
+                            break;
                         case 4:
                             if(allEvents.get(i) instanceof FoodTruck){
                                 allEvents.get(i).printMe();
                             }
+                            break;
                     }//end switch
 
                 }//end for i
 
 
             }else if (choice == 4) {
-
+                //print events grouped by type
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < allEvents.size(); j++) {
+                        if(i == 0 && allEvents.get(j) instanceof NonMusicEvent){
+                            allEvents.get(j).printMe();
+                        } else if (i == 1 && allEvents.get(j) instanceof MainStageEvent) {
+                            allEvents.get(j).printMe();
+                        } else if (i == 2 && allEvents.get(j) instanceof SmallStage) {
+                            allEvents.get(j).printMe();
+                        }
+                    }//end for j
+                }//end for i
 
             }else if(choice == 5){
+                //Add main stage tech
+                System.out.println("What main stage event do you want to add tech to?");
+                String event = input.nextLine();
 
+                boolean eventFound = false;
+
+                for (int i = 0; i < allEvents.size(); i++) {
+                    if(allEvents.get(i).getEventName().equalsIgnoreCase(event) && allEvents.get(i) instanceof MainStageEvent){
+                        eventFound = true;
+
+                        System.out.println("What type of tech do you want to add?");
+                        String tech = input.nextLine();
+
+                        ((MainStageEvent)allEvents.get(i)).addTech(tech);
+
+                    }//end if
+                }//end for i
+
+                if(!eventFound){
+                    System.out.println("Event not found or not a main stage event. Consider adding a new main stage event.");
+                }
 
             }else{
                 break;
@@ -149,8 +183,6 @@ public class Ex3_Main {
 
 
         }//while loop
-
-
 
 
     }//run
