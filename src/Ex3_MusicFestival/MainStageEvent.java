@@ -15,7 +15,7 @@ class MainStageEvent extends Event {
 
     @Override
     public void printMe(){
-        System.out.println("\nName:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + "  ID:" + super.getEventID());
+        System.out.println("Name:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + "  ID:" + super.getEventID());
     }
 
     public void addTech(String tech) {

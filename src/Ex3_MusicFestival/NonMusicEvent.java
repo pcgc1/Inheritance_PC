@@ -7,13 +7,13 @@ class NonMusicEvent extends Event {
     public NonMusicEvent(String name, String type, String loc ){
         super(name,type);
         super.setLocation(loc);
-        this.rent = -1; // arbitrary default integer 
+        this.rent = -1; // arbitrary default integer
 
     }
 
     @Override
     public void printMe(){
-        System.out.println("\nName:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + "  ID:" + super.getEventID() );
+        System.out.println("Name:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + "  ID:" + super.getEventID() );
     }
 
     public void setRent(int r){

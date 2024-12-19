@@ -11,7 +11,7 @@ class SmallStage extends Event{
 
     @Override
     public void printMe(){
-        System.out.println("\nName:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + " # of performers:" + bandMembers + "  ID:" + super.getEventID() );
+        System.out.println("Name:" + super.getEventName() + "  Type:" + super.getEventType() + "  Location:" + super.getLocation() + " # of performers:" + bandMembers + "  ID:" + super.getEventID() );
     }
 
     public String printMembers(){
