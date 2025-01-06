@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="baen" />
+    <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="baen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/Ex3_Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/Ex3_Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/FoodTruck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/FoodTruck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/MainStageEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/MainStageEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/NonMusicEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/NonMusicEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/SmallStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Inheritance_PC/Ex3_MusicFestival/SmallStage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,16 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "F:/CompSci30_PC/OOP_PC",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/CompSci30_PC/OOP_PC&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -141,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734128547782</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="baen">
+      <created>1734643103812</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734643103812</updated>
+    </task>
+    <task id="LOCAL-00013" summary="baen">
+      <created>1734643108683</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734643108683</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
