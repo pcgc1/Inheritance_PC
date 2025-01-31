@@ -17,6 +17,12 @@ public class As1_Bingo {
         printBingo(bingoCard);
 
 
+        while(true){
+
+
+
+        }//while true
+
     }//run
 
 
@@ -28,6 +34,14 @@ public class As1_Bingo {
             }
         return arr;
     }//generate array
+
+
+
+    public static int myRandom (int min, int max){
+        int num =  (int) (Math.random() * (max - min + 1)   + min);
+        return num;
+    }//random
+
 
 
     public static void printBingo(int[][] grid) {
