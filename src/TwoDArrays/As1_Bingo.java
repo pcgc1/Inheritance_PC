@@ -1,7 +1,10 @@
 package TwoDArrays;
 
+import java.util.Scanner;
+
 public class As1_Bingo {
 
+    public static Scanner input = new Scanner(System.in);
    public static char[] allLetters = {'B', 'I', 'N', 'G', 'O'};
 
     public static void run(){
@@ -14,10 +17,29 @@ public class As1_Bingo {
 
         int[][] bingoCard = {row1, row2, row3, row4, row5};
 
-        printBingo(bingoCard);
-
 
         while(true){
+
+            //Print bingo card
+            printBingo(bingoCard);
+
+            //Print random number
+            input.nextLine();
+            int ranNum = myRandom(1,75);
+            System.out.println("The number chosen is: " + ranNum);
+
+            //Check bingo card
+            for (int row = 0; row < bingoCard.length; row++) {
+                for (int col = 0; col < bingoCard[row].length; col++) {
+                    if( bingoCard[row][col] == ranNum){
+                        bingoCard[row][col] *= -1;
+                    }
+                }//for col
+            }//for row
+
+
+            //check for winner
+
 
 
 
@@ -55,5 +77,25 @@ public class As1_Bingo {
             System.out.println();
         } // row
     }// printSudoku
+
+
+
+    public static boolean checkRow(int[] row){
+
+        for (int i = 0; i < row.length; i++) {
+            if(row[i] < 0){
+
+            }
+        }
+        
+        return false;
+    }//check row
+
+
+
+    public static boolean checkCol(int[][]twoDArray, int colNum){
+
+        return false;
+    }//check col
 
 }//class
