@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class As1_Bingo {
 
     public static Scanner input = new Scanner(System.in);
-   public static char[] allLetters = {'B', 'I', 'N', 'G', 'O'};
+    public static char[] allLetters = {'B', 'I', 'N', 'G', 'O'};
 
     public static void run(){
 
@@ -65,10 +65,10 @@ public class As1_Bingo {
 
     public static int[] generateArray(int arrLength, int min, int max){
         int[] arr = new int[arrLength];
-            for (int i = 0; i < arrLength; i++) {
-                int num =  (int) (Math.random() * (max - min + 1)   + min);
-                arr[i] = num;
-            }
+        for (int i = 0; i < arrLength; i++) {
+            int num =  (int) (Math.random() * (max - min + 1)   + min);
+            arr[i] = num;
+        }
         return arr;
     }//generate array
 
@@ -98,19 +98,23 @@ public class As1_Bingo {
     public static boolean checkRow(int[] row){
 
         for (int i = 0; i < row.length; i++) {
-            if(row[i] < 0){
-
+            if(row[i] >= 0){
+                return false;
             }
         }
-        
-        return false;
+
+        return true;
     }//check row
 
 
 
     public static boolean checkCol(int[][]twoDArray, int colNum){
-
-        return false;
+        for (int i = 0; i < twoDArray.length; i++) {
+            if(twoDArray[i][colNum] >= 0){
+                return false;
+            }
+        }
+        return true;
     }//check col
 
 }//class
