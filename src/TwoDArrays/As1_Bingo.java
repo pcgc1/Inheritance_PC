@@ -41,22 +41,28 @@ public class As1_Bingo {
             //check for winner
 
             //check rows
+            boolean bingoWin = false;
+
             for (int i = 0; i < 5; i++) {
                 if( checkRow(bingoCard[i]) ){
-                    System.out.println("BINGO!");
+                    bingoWin = true;
                     break;
                 }
             }
 
             //check columns
-//            for (int i = 0; i < 5; i++) {
-//                if( checkCol(bingoCard, i) ){
-//                    System.out.println("BINGO!");
-//                    break;
-//                }
-//            }
+            for (int i = 0; i < 5; i++) {
+                if( checkCol(bingoCard, i) ){
+                    bingoWin = true;
+                    break;
+                }
+            }
 
 
+            if(bingoWin){
+                System.out.println("BINGO!");
+                break;
+            }
 
         }//while true
 
