@@ -7,8 +7,13 @@ public class As2_Vigenere {
     public static void run() {
         char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K',
                 'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+
         char[][] vigenere = createVSquare(alphabet);
+
+
         printSquare(vigenere);
+
+
     }//run
 
 
@@ -18,7 +23,11 @@ public class As2_Vigenere {
         for (int row = 0; row < alphabet.length; row++) {
             for (int col = 0; col < square[row].length; col++) {
 
-                square[row] = ;
+                int index = row + col;
+                if (index >= alphabet.length) {
+                    index -= alphabet.length; // Wrap around
+                }
+                square[row][col] = alphabet[index];
 
             }//for col
         }//for row
@@ -30,7 +39,12 @@ public class As2_Vigenere {
 
 
     public static void printSquare(char[][] square) {
-
+        for (int row = 0; row < square.length; row++) {
+            for (int col = 0; col < square[row].length; col++) {
+                System.out.print(square[row][col] + " ");
+            }
+            System.out.println();
+        }
     }//end printS
 
 
