@@ -13,6 +13,9 @@ public class As2_Vigenere {
 
         printSquare(vigenere);
 
+        //decypher message
+        System.out.println("What is your message?");
+
 
     }//run
 
@@ -57,7 +60,7 @@ public class As2_Vigenere {
 
 
 
-    public static char returnChar(char[][] square, int rowNum, int colNum){
+    public static char getChar(char[][] square, int rowNum, int colNum){
 
         return square[rowNum][colNum];
 
