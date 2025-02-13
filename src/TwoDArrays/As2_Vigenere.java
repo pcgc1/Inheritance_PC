@@ -1,20 +1,40 @@
 package TwoDArrays;
 
+import java.util.Scanner;
+
 public class As2_Vigenere {
 
-
+    public static Scanner input = new Scanner(System.in);
 
     public static void run() {
         char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K',
                 'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
-        char[][] vigenere = createVSquare(alphabet);
+        char[][] vigenereSquare = createVSquare(alphabet);
 
 
-        printSquare(vigenere);
+        printSquare(vigenereSquare);
 
-        //decypher message
+        //decipher message
         System.out.println("What is your message?");
+        String message = input.nextLine();
+
+        //create key stream for message
+        char[] keyStream = createKeystream(message);
+
+        //decode each char
+        for (int i = 0; i < message.length(); i++) {
+            char encChar = message.charAt(i);
+            char keyChar = keyStream[i];
+
+
+
+        }//end for i
+
+//        for (int i = 0; i < keyStream.length; i++) {
+//            System.out.print( keyStream[i] );
+//        }
+
 
 
     }//run
@@ -27,7 +47,7 @@ public class As2_Vigenere {
             for (int col = 0; col < square[row].length; col++) {
 
                 int index = row + col;
-                if (index >= alphabet.length) {
+                if (index >= alphabet.length) {// when index goes past last letter in the alphabet, start again from A
                     index -= alphabet.length; // Wrap around
                 }
                 square[row][col] = alphabet[index];
@@ -65,6 +85,19 @@ public class As2_Vigenere {
         return square[rowNum][colNum];
 
     }//return char
+
+
+    public static char[] createKeystream(String message){
+        char[] key = {'S', 'C', 'O', 'N', 'A'};
+        char[] fullKey = new char[message.length()];
+
+        for (int i = 0; i < message.length(); i++) {
+            fullKey[i] = key[ i % key.length ];
+        }
+
+        return fullKey;
+
+    }// create key stream
 
 
 
