@@ -15,23 +15,33 @@ public class As2_Vigenere {
 
         printSquare(vigenereSquare);
 
+        //ask for key
+        System.out.println("What is your key?");
+        String key = input.nextLine();
+
         //decipher message
         System.out.println("What is your message?");
         String message = input.nextLine();
 
         //create key stream for message
-        char[] keyStream = createKeystream(message);
+        char[] keyStream = createKeystream(message, key);
+
 
         //decode each char
         for (int i = 0; i < message.length(); i++) {
             char encChar = message.charAt(i);
             char keyChar = keyStream[i];
 
+            int row = linearSearch(alphabet, keyChar);//find row that keystream char is in
 
+            int col = linearSearch(vigenereSquare[row], encChar);//find which column encrypted char is in
+
+            System.out.print(alphabet[col]);
 
         }//end for i
 
-//        for (int i = 0; i < keyStream.length; i++) {
+
+//        for(int i = 0; i < keyStream.length; i++) {
 //            System.out.print( keyStream[i] );
 //        }
 
@@ -87,12 +97,12 @@ public class As2_Vigenere {
     }//return char
 
 
-    public static char[] createKeystream(String message){
-        char[] key = {'S', 'C', 'O', 'N', 'A'};
+    public static char[] createKeystream(String message, String key){
+//        char[] key = {'S', 'C', 'O', 'N', 'A'};
         char[] fullKey = new char[message.length()];
 
         for (int i = 0; i < message.length(); i++) {
-            fullKey[i] = key[ i % key.length ];
+            fullKey[i] = key.charAt( i % key.length() );
         }
 
         return fullKey;
