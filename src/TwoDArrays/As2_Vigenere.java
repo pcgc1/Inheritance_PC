@@ -102,7 +102,7 @@ public class As2_Vigenere {
         char[] fullKey = new char[message.length()];
 
         for (int i = 0; i < message.length(); i++) {
-            fullKey[i] = key.charAt( i % key.length() );
+            fullKey[i] = key.charAt( i % key.length() );//loop index for key stream
         }
 
         return fullKey;
