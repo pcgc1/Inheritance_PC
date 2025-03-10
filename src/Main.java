@@ -1,6 +1,7 @@
 import Ex1_Animals.Ex1_Main;
 import Ex2_Restaurant.Ex2_Main;
 import Ex3_MusicFestival.Ex3_Main;
+import FamilyTree.FamilyTreeMain;
 import TwoDArrays.As1_Bingo;
 import TwoDArrays.As2_Vigenere;
 import TwoDArrays.Ex1_GolfCard;
@@ -15,7 +16,8 @@ public class Main {
 //        Ex1_GolfCard.run();
 //        Ex2_TicTacToe.run();
 //        As1_Bingo.run();
-        As2_Vigenere.run();
+//        As2_Vigenere.run();
+        FamilyTreeMain.run();
 
     }
 
