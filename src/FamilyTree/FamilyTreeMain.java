@@ -49,22 +49,10 @@ public class FamilyTreeMain {
 
     public static void printFamily(Person ptemp){
 
-//        int index = 0;
-//
-//        if(index == ptemp.children.size()){
-//
-//        } else if ( ptemp.children.isEmpty() ) {
-//            printFamily(ptemp.children.get(index+1));
-//        }
-
         for (int i = 0; i < ptemp.children.size(); i++) {
-            System.out.println( ptemp.printMe() );
+            System.out.println( ptemp.children.get(i).printMe() );
             printFamily( ptemp.children.get(i) );
         }
-
-
-//        printFamily(ptemp.children.get(1));
-//        printFamily( ptemp.children.get(2) );
 
     }//print family
 
