@@ -16,6 +16,9 @@ public class Person {
 
     }//person
 
+    public String printMe(){
+        return name;
+    }
 
     public void addChild(Person p){
         children.add(p);
