@@ -1,9 +1,11 @@
 package FamilyTree;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class FamilyTreeMain {
 
+    public static Scanner input = new Scanner(System.in);
 
     public static void run(){
         Person person1 = new Person("Bobbie", "Mexico");
@@ -41,15 +43,36 @@ public class FamilyTreeMain {
         person1.children.get(1).children.get(0).children.get(1).addChild( new Person("Philbert", "Chile") );
 
 
-        //print fam
-        printFamily(person1);
+        while (true) {
+            System.out.println("\nPress 1 to print the family\nPress 2 to count the number of family members\nPress 3 to print Canadians\nPress 4 to print from here\nPress 5 to exit");
+            int choice = input.nextInt();
+            input.nextLine();
 
-        //count family
-        System.out.println("There is " + countFamily(person1) + " people in this family");
+            if (choice == 1) {
+                //print fam
+                printFamily(person1);
+            }
+            if (choice == 2) {
+                //count family
+                System.out.println("There is " + countFamily(person1) + " people in this family");
+            }
+            if(choice == 3){
+                //print canadians
+                System.out.println("Family in Canada:");
+                printCanadians(person1);
+            }
+            if(choice == 4){
+                //print from here
+                System.out.println("Who do you want to start printing from");
+                String ans = input.nextLine();
+                printFromHere(person1, ans);
+            }
+            if(choice == 5){
+                return;
+            }
 
-        //print canadians
-        System.out.println("Family in Canada:");
-        printCanadians(person1);
+        }//while
+
 
     }//run
 
@@ -89,5 +112,18 @@ public class FamilyTreeMain {
         }
 
     }//print canadians
+
+
+    public static void printFromHere(Person ptemp, String name){
+
+        for (int i = 0; i < ptemp.children.size(); i++) {
+            if(ptemp.children.get(i).name.equalsIgnoreCase(name)){
+                printFamily( ptemp.children.get(i) );
+            }
+           printFromHere( ptemp.children.get(i), name );
+        }
+
+    }//print from here
+
 
 }//main class
