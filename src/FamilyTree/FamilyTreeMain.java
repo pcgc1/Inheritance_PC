@@ -44,6 +44,13 @@ public class FamilyTreeMain {
         //print fam
         printFamily(person1);
 
+        //count family
+        System.out.println("There is " + countFamily(person1) + " people in this family");
+
+        //print canadians
+        System.out.println("Family in Canada:");
+        printCanadians(person1);
+
     }//run
 
 
@@ -57,10 +64,30 @@ public class FamilyTreeMain {
     }//print family
 
 
-    public static int countFamily(){
+    public static int countFamily(Person ptemp){
         int num = 0;
+
+        num++;
+
+        for (int i = 0; i < ptemp.children.size(); i++) {
+           num += countFamily( ptemp.children.get(i) );
+        }
 
         return num;
     }// count fam
+
+
+    public static void printCanadians(Person ptemp){
+
+        for (int i = 0; i < ptemp.children.size(); i++) {
+
+            if(ptemp.children.get(i).country.equalsIgnoreCase("canada")){
+                System.out.println(ptemp.children.get(i).printMe());
+            }
+
+            printCanadians( ptemp.children.get(i) );
+        }
+
+    }//print canadians
 
 }//main class
