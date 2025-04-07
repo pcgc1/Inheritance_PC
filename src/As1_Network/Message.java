@@ -6,6 +6,15 @@ public class Message {
     private String warning;
 
 
+    public Message(String message){
+        String str1 = message.substring(0, message.indexOf(':') );
+        String str2 = message.substring( message.indexOf(':')+1 );
+
+        machineType = str1.substring(0, str1.length()-1);
+        machineId = str1.substring( str1.length()-1 );
+        warning = str2.trim();
+
+    }//constructor
 
     public String getMachineType() {
         return machineType;

@@ -7,8 +7,25 @@ public class Main {
 
     public static Scanner input = new Scanner( System.in );
 
+
     public static void main(String[] args) {
         System.out.println("Assign 1 Network Messages");
+
+        ArrayList<Message> allMessages = new ArrayList();
+        allMessages.add( new Message("Client3: repeated login failure ") );
+        allMessages.add( new Message("Client2:filed password reset on file ") );
+        allMessages.add( new Message("Server1: file not found ") );
+        allMessages.add( new Message("Server3: ping not returned ") );
+        allMessages.add( new Message("Server1:write file error on disk DSK1 ") );
+        allMessages.add( new Message("Server2:disk failure on DSK2 ") );
+        allMessages.add( new Message("Server2:diskette diskette") );
+        allMessages.add( new Message("Client3:    diskette disk  ") );
+        allMessages.add( new Message("Router1: missing packet ") );
+        allMessages.add( new Message("PC4: power surge detected ") );
+
+        System.out.println(allMessages.get(0).getMachineType());
+        System.out.println(allMessages.get(0).getMachineId());
+        System.out.println( allMessages.get(0).getWarning());
 
         while (true) {
             System.out.println("\nWhat do you want to do?");
