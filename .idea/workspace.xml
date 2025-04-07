@@ -7,7 +7,6 @@
     <list default="true" id="d347db3d-fdc9-4f1b-940f-de355116165b" name="Changes" comment="baen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/As1_Network/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/As1_Network/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/As1_Network/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/As1_Network/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744056146893</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="baen">
+      <option name="closed" value="true" />
+      <created>1744059482731</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1744059482731</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,4 +1,5 @@
 package As1_Network;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -38,8 +39,14 @@ public class Main {
             System.out.println();
 
             if (option == 1) {
-
+                System.out.println("What is your network message?");
+                String msg = input.nextLine();
+                allMessages.add( new Message(msg));
             } else if (option == 2) {
+                System.out.println("Machine Types:            Machine ID:          Warning:");
+                for (int i = 0; i < allMessages.size(); i++) {
+                    System.out.println( allMessages.get(i).getMachineType() + "___" + allMessages.get(i).getMachineId() + "___" + allMessages.get(i).getWarning() + ".");
+                }
 
             } else if (option == 3) {
 
