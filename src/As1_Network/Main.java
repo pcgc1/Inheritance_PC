@@ -49,6 +49,9 @@ public class Main {
                 }
 
             } else if (option == 3) {
+                System.out.println("Which warning are you looking for?");
+                String keyword = input.nextLine();
+
 
             } else if (option == 4) {
                 break;

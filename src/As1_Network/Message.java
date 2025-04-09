@@ -1,5 +1,7 @@
 package As1_Network;
 
+import java.util.ArrayList;
+
 public class Message {
     private String machineType;
     private String machineId;
@@ -28,9 +30,19 @@ public class Message {
         return warning;
     }
 
-//    public boolean scanWarning(){
-//
-//    }
+    public boolean scanWarning( String keyword){
+        if( warning.equals(keyword) ){
+            return true;
+        }else if( warning.endsWith( " " + keyword)){
+            return true;
+        }else if( warning.startsWith( keyword + " ")){
+            return true;
+        }else if( warning.contains( " " + keyword + " ")){
+            return true;
+        }else {
+            return false;
+        }
+    }//scan warning
 
 
 }//class
