@@ -52,6 +52,11 @@ public class Main {
                 System.out.println("Which warning are you looking for?");
                 String keyword = input.nextLine();
 
+                for (int i = 0; i < allMessages.size(); i++) {
+                    if( allMessages.get(i).scanWarning(keyword) ){
+                        System.out.println( allMessages.get(i).getWarning() );
+                    }
+                }//for i
 
             } else if (option == 4) {
                 break;
